@@ -21,6 +21,11 @@ jobs:
         run: |
           npm i
 
+      - name: Install source Dependencies
+        run: |
+          cd source
+          npm i
+
       - name: Format & Lint
         run: |
           cd source
