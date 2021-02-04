@@ -1,6 +1,6 @@
 {
 	"entryPoints": [
-		"source"
+		"source/src/index.ts"
 	],
 	"gitRemote": "https://github.com/Advanced-Command-Handler/Advanced-Command-Handler",
 	"highlightTheme": "github-dark",
@@ -8,5 +8,6 @@
 	"name": "Advanced Command-Handler",
 	"out": "docs",
 	"readme": "https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/README.md",
-	"theme": "./node_modules/typedoc-darker-theme/bin/default"
+	"theme": "./node_modules/typedoc-darker-theme/bin/default",
+	"tsconfig": "source/src/tsconfig.json"
 }
