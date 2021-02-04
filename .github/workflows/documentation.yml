@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Download Command Handler
+        uses: actions/checkout@v2
         with:
           repository: Advanced-Command-Handler/Advanced-Command-Handler
           path: 'source'
@@ -19,12 +22,16 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          dir
           ls
+          dir
           cd source
           ls
           cd ../..
+          dir
           ls
           cd docs
+          dir
           npm i
 
       - name: Install source Dependencies
