@@ -1,0 +1,38 @@
+name: Generate Documentation
+
+on: [workflow_dispatch, repository_dispatch]
+
+jobs:
+  genDocs:
+    name: Generate Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: Advanced-Command-Handler/Advanced-Command-Handler
+          path: 'source'
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: |
+          npm i
+
+      - name: Format & Lint
+        run: |
+          npm run prettier
+          npm run lint
+
+      - name: Generate Documentation
+        run: npm run generate
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Action"
+          git add docs -f
+          git commit -m "Generated documentation."
+          git push origin master
