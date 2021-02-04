@@ -20,7 +20,8 @@ jobs:
       - name: Install Dependencies
         run: |
           ls
-          cd source ls
+          cd source
+          ls
           cd ../..
           ls
           cd docs
