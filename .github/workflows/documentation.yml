@@ -22,16 +22,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          dir
-          ls
-          dir
-          cd source
-          ls
-          cd ../..
-          dir
-          ls
-          cd docs
-          dir
           npm i
 
       - name: Install source Dependencies
