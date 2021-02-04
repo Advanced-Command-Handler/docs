@@ -3,7 +3,7 @@
 		"source"
 	],
 	"gitRemote": "https://github.com/Advanced-Command-Handler/Advanced-Command-Handler",
-	"highlightTheme": "--highlightTheme github-dark",
+	"highlightTheme": "github-dark",
 	"includeVersion": true,
 	"name": "Advanced Command-Handler",
 	"out": "docs",
