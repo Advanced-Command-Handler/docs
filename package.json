@@ -1,0 +1,17 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "The official documentation for Advanced-Command-Handler.",
+  "repository": "https://github.com/Advanced-Command-Handler/docs.git",
+  "author": "Ayfri <pierre.ayfri@gmail.com>",
+  "license": "GNU",
+  "private": true,
+  "dependencies": {
+    "typedoc": "^0.20.20",
+    "typedoc-darker-theme": "^1.1.4"
+  },
+  "scripts": {
+    "generate": "typedoc",
+    "watch": "npm run generate -- --watch"
+  }
+}
