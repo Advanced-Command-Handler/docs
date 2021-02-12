@@ -1,0 +1,7 @@
+[
+	{
+		"pattern": "^source/src",
+		"replace": "https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src"
+	}
+]
+

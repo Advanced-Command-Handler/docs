@@ -9,10 +9,11 @@
   "dependencies": {
     "typedoc": "^0.20.24",
     "typedoc-darker-theme": "^1.1.4",
+    "typedoc-plugin-sourcefile-url": "^1.0.6",
     "typescript": "^4.1.5"
   },
   "scripts": {
-    "generate": "typedoc",
+    "generate": "typedoc --sourcefile-url-map mappings.json",
     "watch": "npm run generate -- --watch"
   }
 }
