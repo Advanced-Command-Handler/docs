@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tag
+	<title>CommandErrorType
 	| Advanced Command-Handler - v3.0.0-beta.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,39 +57,16 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.0</a>
 				</li>
 				<li>
-					<a href="tag.html">Tag</a>
+					<a href="commanderrortype.html">CommandErrorType</a>
 				</li>
 			</ul>
-			<h1>Enumeration Tag</h1>
+			<h1>Enumeration CommandErrorType</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<a href="#how-tags-should-work-" id="how-tags-should-work-" style="color: inherit; text-decoration: none;">
-							<h1>How tags should work ?</h1>
-						</a>
-					</div>
-					<p>When using commands, you want certain commands to only run on a server or in private messages etc.<br>
-						Most other CommandHandlers uses boolean properties like <code>guildOnly</code>.<br>
-						To avoid having a ton of these, I imagined a system where you have command tags and for every call, tags of the command are verified one by one.<br>
-						And this system works very smoothly !<br>
-						So if you&#39;re using the default message event
-					(<a href="https://github.com/Ayfri/Advanced-Command-Handler/wiki/Defaults#defaults-events" class="external">see how to use defaults events</a>), tags will be checked.</p>
-					<dl class="tsd-comment-tags">
-						<dt>example</dt>
-						<dd><pre><code class="language-ts"><span style="color: #F97583">if</span><span style="color: #E1E4E8"> (command.tags.</span><span style="color: #B392F0">includes</span><span style="color: #E1E4E8">(Tag.guildOnly) </span><span style="color: #F97583">&amp;&amp;</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">!</span><span style="color: #E1E4E8">message.guild) {</span>
-<span style="color: #E1E4E8">    message.channel.</span><span style="color: #B392F0">send</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">`You must be on a guild to execute the ${</span><span style="color: #E1E4E8">command</span><span style="color: #9ECBFF">.</span><span style="color: #E1E4E8">name</span><span style="color: #9ECBFF">} command !`</span><span style="color: #E1E4E8">);</span>
-<span style="color: #E1E4E8">}</span>
-</code></pre>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -97,16 +74,18 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="tag.html#dmonly"
-								class="tsd-kind-icon">dm<wbr>Only</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="tag.html#guildonly"
-								class="tsd-kind-icon">guild<wbr>Only</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="tag.html#guildowneronly"
-								class="tsd-kind-icon">guild<wbr>Owner<wbr>Only</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="tag.html#nsfw"
-								class="tsd-kind-icon">nsfw</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="tag.html#owneronly"
-								class="tsd-kind-icon">owner<wbr>Only</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commanderrortype.html#client_missing_permissions"
+								class="tsd-kind-icon">CLIENT_<wbr>MISSING_<wbr>PERMISSIONS</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commanderrortype.html#cooldown"
+								class="tsd-kind-icon">COOLDOWN</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commanderrortype.html#error"
+								class="tsd-kind-icon">ERROR</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commanderrortype.html#missing_tags"
+								class="tsd-kind-icon">MISSING_<wbr>TAGS</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commanderrortype.html#user_missing_permissions"
+								class="tsd-kind-icon">USER_<wbr>MISSING_<wbr>PERMISSIONS</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="commanderrortype.html#wrong_channel"
+								class="tsd-kind-icon">WRONG_<wbr>CHANNEL</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,79 +94,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="dmonly" class="tsd-anchor"></a>
-					<h3>dm<wbr>Only</h3>
-					<div class="tsd-signature tsd-kind-icon">dm<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;dmOnly&quot;</span></div>
+					<a name="client_missing_permissions" class="tsd-anchor"></a>
+					<h3>CLIENT_<wbr>MISSING_<wbr>PERMISSIONS</h3>
+					<div class="tsd-signature tsd-kind-icon">CLIENT_<wbr>MISSING_<wbr>PERMISSIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L46">source/src/classes/commands/Command.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L4">source/src/classes/errors/CommandError.ts:4</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tag for commands to only run in private messages.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="guildonly" class="tsd-anchor"></a>
-					<h3>guild<wbr>Only</h3>
-					<div class="tsd-signature tsd-kind-icon">guild<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;guildOnly&quot;</span></div>
+					<a name="cooldown" class="tsd-anchor"></a>
+					<h3>COOLDOWN</h3>
+					<div class="tsd-signature tsd-kind-icon">COOLDOWN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L30">source/src/classes/commands/Command.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L8">source/src/classes/errors/CommandError.ts:8</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tag for commands to only run on a guild.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="guildowneronly" class="tsd-anchor"></a>
-					<h3>guild<wbr>Owner<wbr>Only</h3>
-					<div class="tsd-signature tsd-kind-icon">guild<wbr>Owner<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;guildOwnerOnly&quot;</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3>ERROR</h3>
+					<div class="tsd-signature tsd-kind-icon">ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L42">source/src/classes/commands/Command.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L9">source/src/classes/errors/CommandError.ts:9</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tag for commands to only run on a guild and if the author is the owner of the guild.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="nsfw" class="tsd-anchor"></a>
-					<h3>nsfw</h3>
-					<div class="tsd-signature tsd-kind-icon">nsfw<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;nsfw&quot;</span></div>
+					<a name="missing_tags" class="tsd-anchor"></a>
+					<h3>MISSING_<wbr>TAGS</h3>
+					<div class="tsd-signature tsd-kind-icon">MISSING_<wbr>TAGS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L38">source/src/classes/commands/Command.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L6">source/src/classes/errors/CommandError.ts:6</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tag for commands to only run on a guild and in an NSFW channel.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="owneronly" class="tsd-anchor"></a>
-					<h3>owner<wbr>Only</h3>
-					<div class="tsd-signature tsd-kind-icon">owner<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;ownerOnly&quot;</span></div>
+					<a name="user_missing_permissions" class="tsd-anchor"></a>
+					<h3>USER_<wbr>MISSING_<wbr>PERMISSIONS</h3>
+					<div class="tsd-signature tsd-kind-icon">USER_<wbr>MISSING_<wbr>PERMISSIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L34">source/src/classes/commands/Command.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L5">source/src/classes/errors/CommandError.ts:5</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Tag for commands to only run if author is an owner defined in <a href="../modules/commandhandler.html#owners">CommandHandler.owners</a>.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="wrong_channel" class="tsd-anchor"></a>
+					<h3>WRONG_<wbr>CHANNEL</h3>
+					<div class="tsd-signature tsd-kind-icon">WRONG_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L7">source/src/classes/errors/CommandError.ts:7</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -204,22 +168,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="tag.html" class="tsd-kind-icon">Tag</a>
+						<a href="commanderrortype.html" class="tsd-kind-icon">Command<wbr>Error<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="tag.html#dmonly" class="tsd-kind-icon">dm<wbr>Only</a>
+								<a href="commanderrortype.html#client_missing_permissions" class="tsd-kind-icon">CLIENT_<wbr>MISSING_<wbr>PERMISSIONS</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="tag.html#guildonly" class="tsd-kind-icon">guild<wbr>Only</a>
+								<a href="commanderrortype.html#cooldown" class="tsd-kind-icon">COOLDOWN</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="tag.html#guildowneronly" class="tsd-kind-icon">guild<wbr>Owner<wbr>Only</a>
+								<a href="commanderrortype.html#error" class="tsd-kind-icon">ERROR</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="tag.html#nsfw" class="tsd-kind-icon">nsfw</a>
+								<a href="commanderrortype.html#missing_tags" class="tsd-kind-icon">MISSING_<wbr>TAGS</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="tag.html#owneronly" class="tsd-kind-icon">owner<wbr>Only</a>
+								<a href="commanderrortype.html#user_missing_permissions" class="tsd-kind-icon">USER_<wbr>MISSING_<wbr>PERMISSIONS</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="commanderrortype.html#wrong_channel" class="tsd-kind-icon">WRONG_<wbr>CHANNEL</a>
 							</li>
 						</ul>
 					</li>

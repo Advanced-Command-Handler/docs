@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeleteMessageOptions
+	<title>CommandContextBuilder
 	| Advanced Command-Handler - v3.0.0-beta.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,10 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.0</a>
 				</li>
 				<li>
-					<a href="deletemessageoptions.html">DeleteMessageOptions</a>
+					<a href="commandcontextbuilder.html">CommandContextBuilder</a>
 				</li>
 			</ul>
-			<h1>Interface DeleteMessageOptions</h1>
+			<h1>Interface CommandContextBuilder</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for the Command#deleteMessage method.</p>
+						<p>The interface to create a new CommandContext.</p>
 					</div>
 				</div>
 			</section>
@@ -78,8 +78,19 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeleteMessageOptions</span>
+						<span class="target">CommandContextBuilder</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="subcommandcontextbuilder.html" class="tsd-signature-type" data-tsd-kind="Interface">SubCommandContextBuilder</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/commandcontext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -89,10 +100,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deletemessageoptions.html#message"
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandcontextbuilder.html#args"
+								class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandcontextbuilder.html#command"
+								class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandcontextbuilder.html#handler"
+								class="tsd-kind-icon">handler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandcontextbuilder.html#message"
 								class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deletemessageoptions.html#timeout"
-								class="tsd-kind-icon">timeout</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +116,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="args" class="tsd-anchor"></a>
+					<h3>args</h3>
+					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L24">source/src/classes/contexts/CommandContext.ts:24</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The arguments in the message.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L28">source/src/classes/contexts/CommandContext.ts:28</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The command.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="handler" class="tsd-anchor"></a>
+					<h3>handler</h3>
+					<div class="tsd-signature tsd-kind-icon">handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="../modules/commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L32">source/src/classes/contexts/CommandContext.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The handler.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="message" class="tsd-anchor"></a>
 					<h3>message</h3>
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L66">source/src/classes/commands/Command.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L36">source/src/classes/contexts/CommandContext.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The message to delete.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="timeout" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> timeout</h3>
-					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L70">source/src/classes/commands/Command.ts:70</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>How long to wait to delete the message in milliseconds.</p>
+							<p>The message that executed the command.</p>
 						</div>
 					</div>
 				</section>
@@ -145,13 +190,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="deletemessageoptions.html" class="tsd-kind-icon">Delete<wbr>Message<wbr>Options</a>
+						<a href="commandcontextbuilder.html" class="tsd-kind-icon">Command<wbr>Context<wbr>Builder</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deletemessageoptions.html#message" class="tsd-kind-icon">message</a>
+								<a href="commandcontextbuilder.html#args" class="tsd-kind-icon">args</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deletemessageoptions.html#timeout" class="tsd-kind-icon">timeout</a>
+								<a href="commandcontextbuilder.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="commandcontextbuilder.html#handler" class="tsd-kind-icon">handler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="commandcontextbuilder.html#message" class="tsd-kind-icon">message</a>
 							</li>
 						</ul>
 					</li>

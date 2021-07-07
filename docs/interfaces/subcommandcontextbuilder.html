@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cooldown
+	<title>SubCommandContextBuilder
 	| Advanced Command-Handler - v3.0.0-beta.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,10 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.0</a>
 				</li>
 				<li>
-					<a href="cooldown.html">Cooldown</a>
+					<a href="subcommandcontextbuilder.html">SubCommandContextBuilder</a>
 				</li>
 			</ul>
-			<h1>Interface Cooldown</h1>
+			<h1>Interface SubCommandContextBuilder</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The cooldown object.</p>
+						<p>The object to create a new SubCommandContext.</p>
 					</div>
 				</div>
 			</section>
@@ -78,10 +78,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="commandhandler.commandcooldown.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandCooldown</a>
+						<a href="commandcontextbuilder.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandContextBuilder</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Cooldown</span>
+								<span class="target">SubCommandContextBuilder</span>
 							</li>
 						</ul>
 					</li>
@@ -94,12 +94,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="cooldown.html#cooldown-1"
-								class="tsd-kind-icon">cooldown</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="cooldown.html#executedat"
-								class="tsd-kind-icon">executed<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="cooldown.html#waitmore"
-								class="tsd-kind-icon">wait<wbr>More</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="subcommandcontextbuilder.html#args"
+								class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="subcommandcontextbuilder.html#command"
+								class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="subcommandcontextbuilder.html#handler"
+								class="tsd-kind-icon">handler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="subcommandcontextbuilder.html#message"
+								class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="subcommandcontextbuilder.html#subcommand"
+								class="tsd-kind-icon">sub<wbr>Command</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,49 +112,81 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="cooldown-1" class="tsd-anchor"></a>
-					<h3>cooldown</h3>
-					<div class="tsd-signature tsd-kind-icon">cooldown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="args" class="tsd-anchor"></a>
+					<h3>args</h3>
+					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandhandler.commandcooldown.html">CommandCooldown</a>.<a href="commandhandler.commandcooldown.html#cooldown">cooldown</a></p>
+						<p>Inherited from <a href="commandcontextbuilder.html">CommandContextBuilder</a>.<a href="commandcontextbuilder.html#args">args</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L63">source/src/CommandHandler.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L24">source/src/classes/contexts/CommandContext.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The actual cooldown of the Command.</p>
+							<p>The arguments in the message.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="executedat" class="tsd-anchor"></a>
-					<h3>executed<wbr>At</h3>
-					<div class="tsd-signature tsd-kind-icon">executed<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandhandler.commandcooldown.html">CommandCooldown</a>.<a href="commandhandler.commandcooldown.html#executedat">executedAt</a></p>
+						<p>Inherited from <a href="commandcontextbuilder.html">CommandContextBuilder</a>.<a href="commandcontextbuilder.html#command">command</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L59">source/src/CommandHandler.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L28">source/src/classes/contexts/CommandContext.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The date the cooldown has started.</p>
+							<p>The command.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="handler" class="tsd-anchor"></a>
+					<h3>handler</h3>
+					<div class="tsd-signature tsd-kind-icon">handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="../modules/commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="commandcontextbuilder.html">CommandContextBuilder</a>.<a href="commandcontextbuilder.html#handler">handler</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L32">source/src/classes/contexts/CommandContext.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The handler.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="commandcontextbuilder.html">CommandContextBuilder</a>.<a href="commandcontextbuilder.html#message">message</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L36">source/src/classes/contexts/CommandContext.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The message that executed the command.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="waitmore" class="tsd-anchor"></a>
-					<h3>wait<wbr>More</h3>
-					<div class="tsd-signature tsd-kind-icon">wait<wbr>More<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="subcommand" class="tsd-anchor"></a>
+					<h3>sub<wbr>Command</h3>
+					<div class="tsd-signature tsd-kind-icon">sub<wbr>Command<span class="tsd-signature-symbol">:</span> <a href="../classes/subcommand.html" class="tsd-signature-type" data-tsd-kind="Class">SubCommand</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L56">source/src/classes/commands/Command.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/SubCommandContext.ts#L11">source/src/classes/contexts/SubCommandContext.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The time to wait, in seconds &amp; milliseconds.</p>
+							<p>The SubCommand related to this SubcommandContext.</p>
 						</div>
 					</div>
 				</section>
@@ -169,16 +205,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="cooldown.html" class="tsd-kind-icon">Cooldown</a>
+						<a href="subcommandcontextbuilder.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Context<wbr>Builder</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="cooldown.html#cooldown-1" class="tsd-kind-icon">cooldown</a>
+								<a href="subcommandcontextbuilder.html#args" class="tsd-kind-icon">args</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="cooldown.html#executedat" class="tsd-kind-icon">executed<wbr>At</a>
+								<a href="subcommandcontextbuilder.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="subcommandcontextbuilder.html#handler" class="tsd-kind-icon">handler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="subcommandcontextbuilder.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="cooldown.html#waitmore" class="tsd-kind-icon">wait<wbr>More</a>
+								<a href="subcommandcontextbuilder.html#subcommand" class="tsd-kind-icon">sub<wbr>Command</a>
 							</li>
 						</ul>
 					</li>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataType
+	<title>LogLevel
 	| Advanced Command-Handler - v3.0.0-beta.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,10 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.0</a>
 				</li>
 				<li>
-					<a href="datatype.html">DataType</a>
+					<a href="loglevel.html">LogLevel</a>
 				</li>
 			</ul>
-			<h1>Enumeration DataType</h1>
+			<h1>Enumeration LogLevel</h1>
 		</div>
 	</div>
 </header>
@@ -74,22 +74,24 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#channel"
-								class="tsd-kind-icon">CHANNEL</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#command"
-								class="tsd-kind-icon">COMMAND</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#emote"
-								class="tsd-kind-icon">EMOTE</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#guild"
-								class="tsd-kind-icon">GUILD</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#member"
-								class="tsd-kind-icon">MEMBER</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#message"
-								class="tsd-kind-icon">MESSAGE</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#role"
-								class="tsd-kind-icon">ROLE</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="datatype.html#user"
-								class="tsd-kind-icon">USER</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#all"
+								class="tsd-kind-icon">ALL</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#comment"
+								class="tsd-kind-icon">COMMENT</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#debug"
+								class="tsd-kind-icon">DEBUG</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#error"
+								class="tsd-kind-icon">ERROR</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#event"
+								class="tsd-kind-icon">EVENT</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#info"
+								class="tsd-kind-icon">INFO</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#log"
+								class="tsd-kind-icon">LOG</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#off"
+								class="tsd-kind-icon">OFF</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loglevel.html#warning"
+								class="tsd-kind-icon">WARNING</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,82 +100,92 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="channel" class="tsd-anchor"></a>
-					<h3>CHANNEL</h3>
-					<div class="tsd-signature tsd-kind-icon">CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;channel&quot;</span></div>
+					<a name="all" class="tsd-anchor"></a>
+					<h3>ALL</h3>
+					<div class="tsd-signature tsd-kind-icon">ALL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 7</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L6">source/src/utils/getThing.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L16">source/src/utils/Logger.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="command" class="tsd-anchor"></a>
-					<h3>COMMAND</h3>
-					<div class="tsd-signature tsd-kind-icon">COMMAND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;command&quot;</span></div>
+					<a name="comment" class="tsd-anchor"></a>
+					<h3>COMMENT</h3>
+					<div class="tsd-signature tsd-kind-icon">COMMENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 7</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L7">source/src/utils/getThing.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L15">source/src/utils/Logger.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="emote" class="tsd-anchor"></a>
-					<h3>EMOTE</h3>
-					<div class="tsd-signature tsd-kind-icon">EMOTE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;emote&quot;</span></div>
+					<a name="debug" class="tsd-anchor"></a>
+					<h3>DEBUG</h3>
+					<div class="tsd-signature tsd-kind-icon">DEBUG<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 6</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L8">source/src/utils/getThing.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L14">source/src/utils/Logger.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="guild" class="tsd-anchor"></a>
-					<h3>GUILD</h3>
-					<div class="tsd-signature tsd-kind-icon">GUILD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;guild&quot;</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3>ERROR</h3>
+					<div class="tsd-signature tsd-kind-icon">ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L9">source/src/utils/getThing.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L9">source/src/utils/Logger.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="member" class="tsd-anchor"></a>
-					<h3>MEMBER</h3>
-					<div class="tsd-signature tsd-kind-icon">MEMBER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;member&quot;</span></div>
+					<a name="event" class="tsd-anchor"></a>
+					<h3>EVENT</h3>
+					<div class="tsd-signature tsd-kind-icon">EVENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L10">source/src/utils/getThing.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L12">source/src/utils/Logger.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>MESSAGE</h3>
-					<div class="tsd-signature tsd-kind-icon">MESSAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;message&quot;</span></div>
+					<a name="info" class="tsd-anchor"></a>
+					<h3>INFO</h3>
+					<div class="tsd-signature tsd-kind-icon">INFO<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L11">source/src/utils/getThing.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L11">source/src/utils/Logger.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="role" class="tsd-anchor"></a>
-					<h3>ROLE</h3>
-					<div class="tsd-signature tsd-kind-icon">ROLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;role&quot;</span></div>
+					<a name="log" class="tsd-anchor"></a>
+					<h3>LOG</h3>
+					<div class="tsd-signature tsd-kind-icon">LOG<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L12">source/src/utils/getThing.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L13">source/src/utils/Logger.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="user" class="tsd-anchor"></a>
-					<h3>USER</h3>
-					<div class="tsd-signature tsd-kind-icon">USER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user&quot;</span></div>
+					<a name="off" class="tsd-anchor"></a>
+					<h3>OFF</h3>
+					<div class="tsd-signature tsd-kind-icon">OFF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L13">source/src/utils/getThing.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L8">source/src/utils/Logger.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="warning" class="tsd-anchor"></a>
+					<h3>WARNING</h3>
+					<div class="tsd-signature tsd-kind-icon">WARNING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/Logger.ts#L10">source/src/utils/Logger.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,31 +204,34 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="datatype.html" class="tsd-kind-icon">Data<wbr>Type</a>
+						<a href="loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#channel" class="tsd-kind-icon">CHANNEL</a>
+								<a href="loglevel.html#all" class="tsd-kind-icon">ALL</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#command" class="tsd-kind-icon">COMMAND</a>
+								<a href="loglevel.html#comment" class="tsd-kind-icon">COMMENT</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#emote" class="tsd-kind-icon">EMOTE</a>
+								<a href="loglevel.html#debug" class="tsd-kind-icon">DEBUG</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#guild" class="tsd-kind-icon">GUILD</a>
+								<a href="loglevel.html#error" class="tsd-kind-icon">ERROR</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#member" class="tsd-kind-icon">MEMBER</a>
+								<a href="loglevel.html#event" class="tsd-kind-icon">EVENT</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#message" class="tsd-kind-icon">MESSAGE</a>
+								<a href="loglevel.html#info" class="tsd-kind-icon">INFO</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#role" class="tsd-kind-icon">ROLE</a>
+								<a href="loglevel.html#log" class="tsd-kind-icon">LOG</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="datatype.html#user" class="tsd-kind-icon">USER</a>
+								<a href="loglevel.html#off" class="tsd-kind-icon">OFF</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loglevel.html#warning" class="tsd-kind-icon">WARNING</a>
 							</li>
 						</ul>
 					</li>

@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CommandHandler
-	| Advanced Command-Handler - v2.4.0</title>
-	<meta name="description" content="Documentation for Advanced Command-Handler - v2.4.0">
+	| Advanced Command-Handler - v3.0.0-beta.0</title>
+	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -25,7 +25,7 @@
 					<li class="state loading">Preparing search index...</li>
 					<li class="state failure">The search index is not available</li>
 				</ul>
-				<a href="../index.html" class="title">Advanced Command-Handler - v2.4.0</a>
+				<a href="../index.html" class="title">Advanced Command-Handler - v3.0.0-beta.0</a>
 			</div>
 			<div class="table-cell" id="tsd-widgets">
 				<div id="tsd-filter">
@@ -54,7 +54,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">Advanced Command-Handler - v2.4.0</a>
+					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.0</a>
 				</li>
 				<li>
 					<a href="commandhandler.html">CommandHandler</a>
@@ -123,6 +123,10 @@
 								class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="commandhandler.html#emit"
 								class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#findcommand"
+								class="tsd-kind-icon">find<wbr>Command</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#getcommandaliasesandnames"
+								class="tsd-kind-icon">get<wbr>Command<wbr>Aliases<wbr>And<wbr>Names</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#getprefixfrommessage"
 								class="tsd-kind-icon">get<wbr>Prefix<wbr>From<wbr>Message</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#launch-1"
@@ -135,10 +139,14 @@
 								class="tsd-kind-icon">load<wbr>Events</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="commandhandler.html#on"
 								class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#setdefaultcommands"
-								class="tsd-kind-icon">set<wbr>Default<wbr>Commands</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#setdefaultevents"
-								class="tsd-kind-icon">set<wbr>Default<wbr>Events</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#unloadcommand"
+								class="tsd-kind-icon">unload<wbr>Command</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#unloadevent"
+								class="tsd-kind-icon">unload<wbr>Event</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#usedefaultcommands"
+								class="tsd-kind-icon">use<wbr>Default<wbr>Commands</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="commandhandler.html#usedefaultevents"
+								class="tsd-kind-icon">use<wbr>Default<wbr>Events</a></li>
 							</ul>
 						</section>
 					</div>
@@ -149,10 +157,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
 					<a name="commandhandlerevents" class="tsd-anchor"></a>
 					<h3>Command<wbr>Handler<wbr>Events</h3>
-					<div class="tsd-signature tsd-kind-icon">Command<wbr>Handler<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/commandhandler.createcommandhandleroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateCommandHandlerOptions</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../classes/commandhandlererror.html" class="tsd-signature-type" data-tsd-kind="Class">CommandHandlerError</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>launch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>launched<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>loadCommand<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>loadEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../classes/event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Command<wbr>Handler<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/commandhandler.createcommandhandleroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateCommandHandlerOptions</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../classes/commandhandlererror.html" class="tsd-signature-type" data-tsd-kind="Class">CommandHandlerError</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>launch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/commandhandler.launchcommandhandleroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LaunchCommandHandlerOptions</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>launched<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>loadCommand<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>loadEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../classes/event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L69">source/src/CommandHandler.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L90">source/src/CommandHandler.ts:90</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +193,7 @@
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>launch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></h5>
+								<h5>launch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/commandhandler.launchcommandhandleroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LaunchCommandHandlerOptions</a><span class="tsd-signature-symbol">]</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The event executed when the CommandHandler starts its launch.</p>
@@ -225,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">Cooldown<wbr>User<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L48">source/src/CommandHandler.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L69">source/src/CommandHandler.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -252,7 +260,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="../classes/advancedclient.html" class="tsd-signature-type" data-tsd-kind="Class">AdvancedClient</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L139">source/src/CommandHandler.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L161">source/src/CommandHandler.ts:161</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -267,7 +275,7 @@
 					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L109">source/src/CommandHandler.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L130">source/src/CommandHandler.ts:130</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -282,7 +290,7 @@
 					<div class="tsd-signature tsd-kind-icon">commands<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L132">source/src/CommandHandler.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L154">source/src/CommandHandler.ts:154</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -292,7 +300,7 @@
 					<div class="tsd-signature tsd-kind-icon">cooldowns<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Snowflake</span><span class="tsd-signature-symbol">, </span><a href="commandhandler.html#cooldownuser" class="tsd-signature-type" data-tsd-kind="Type alias">CooldownUser</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L124">source/src/CommandHandler.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L146">source/src/CommandHandler.ts:146</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -301,13 +309,14 @@
 						</div>
 						<p><strong>A simple explication</strong> :<br>
 						When a user executes a command with a cooldown, a new value is added.</p>
-						<pre><code class="language-ts"><span style="color: #E1E4E8">[</span><span style="color: #79B8FF">ID</span><span style="color: #E1E4E8">]: {</span>
+						<pre><code class="language-typescript"><span style="color: #E1E4E8">[</span><span style="color: #79B8FF">ID</span><span style="color: #E1E4E8">]: {</span>
 <span style="color: #E1E4E8">   [commandName]: {</span>
 <span style="color: #E1E4E8">       executedAt: </span><span style="color: #79B8FF">Date</span><span style="color: #E1E4E8">,</span>
 <span style="color: #E1E4E8">       cooldown: [command cooldown]</span>
 <span style="color: #E1E4E8">   }</span>
 <span style="color: #E1E4E8">}</span>
 </code></pre>
+						<p>So cooldowns are mapped by IDs then mapped by commands.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
@@ -316,7 +325,7 @@
 					<div class="tsd-signature tsd-kind-icon">emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L105">source/src/CommandHandler.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L126">source/src/CommandHandler.ts:126</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -335,7 +344,7 @@
 					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../classes/event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L131">source/src/CommandHandler.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L153">source/src/CommandHandler.ts:153</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,7 +364,7 @@
 					<div class="tsd-signature tsd-kind-icon">events<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L133">source/src/CommandHandler.ts:133</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L155">source/src/CommandHandler.ts:155</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -365,7 +374,7 @@
 					<div class="tsd-signature tsd-kind-icon">owners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L134">source/src/CommandHandler.ts:134</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L156">source/src/CommandHandler.ts:156</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -375,7 +384,7 @@
 					<div class="tsd-signature tsd-kind-icon">prefixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L135">source/src/CommandHandler.ts:135</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L157">source/src/CommandHandler.ts:157</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -385,7 +394,7 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L99">source/src/CommandHandler.ts:99</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L120">source/src/CommandHandler.ts:120</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -407,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L202">source/src/CommandHandler.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L247">source/src/CommandHandler.ts:247</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,7 +434,9 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></h4>
-							<p>It returns itself so that afterward you can use the other functions.</p>
+							<ul>
+								<li>It returns itself so that afterward you can use the other functions.</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -439,9 +450,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L154">source/src/CommandHandler.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L180">source/src/CommandHandler.ts:180</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Execute an event throughout the CommandHandler.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -468,6 +484,65 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="findcommand" class="tsd-anchor"></a>
+					<h3>find<wbr>Command</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Command<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L199">source/src/CommandHandler.ts:199</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find a command by name or alias.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name or alias of the command.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../classes/command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></h4>
+							<ul>
+								<li>The command found or <code>undefined</code>.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="getcommandaliasesandnames" class="tsd-anchor"></a>
+					<h3>get<wbr>Command<wbr>Aliases<wbr>And<wbr>Names</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Command<wbr>Aliases<wbr>And<wbr>Names<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L189">source/src/CommandHandler.ts:189</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the list of names and aliases of all commands, useful to find a command by name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<ul>
+								<li>All the names and aliases in a flat array.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="getprefixfrommessage" class="tsd-anchor"></a>
 					<h3>get<wbr>Prefix<wbr>From<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
@@ -477,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L256">source/src/CommandHandler.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L310">source/src/CommandHandler.ts:310</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -495,7 +570,9 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
-							<p>The prefix found or null if not.</p>
+							<ul>
+								<li>The prefix found or null if not.</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -509,7 +586,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L224">source/src/CommandHandler.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L271">source/src/CommandHandler.ts:271</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -527,7 +604,9 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Itself in a promise.</p>
+							<ul>
+								<li>Itself in a promise.</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -541,7 +620,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L266">source/src/CommandHandler.ts:266</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L320">source/src/CommandHandler.ts:320</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -578,7 +657,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L291">source/src/CommandHandler.ts:291</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L352">source/src/CommandHandler.ts:352</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -614,7 +693,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L315">source/src/CommandHandler.ts:315</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L376">source/src/CommandHandler.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -645,9 +724,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L146">source/src/CommandHandler.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L170">source/src/CommandHandler.ts:170</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a listener for the {@link eventName} event.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -695,16 +779,78 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="setdefaultcommands" class="tsd-anchor"></a>
-					<h3>set<wbr>Default<wbr>Commands</h3>
+					<a name="unloadcommand" class="tsd-anchor"></a>
+					<h3>unload<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Default<wbr>Commands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">unload<wbr>Command<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L185">source/src/CommandHandler.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L411">source/src/CommandHandler.ts:411</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Unloads a command.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The command to unload.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="unloadevent" class="tsd-anchor"></a>
+					<h3>unload<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">unload<wbr>Event<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L401">source/src/CommandHandler.ts:401</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Unloads an event.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event to unload.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="usedefaultcommands" class="tsd-anchor"></a>
+					<h3>use<wbr>Default<wbr>Commands</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Default<wbr>Commands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L229">source/src/CommandHandler.ts:229</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -718,21 +864,23 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></h4>
-							<p>It returns itself so that afterward you can use the other functions .</p>
+							<ul>
+								<li>It returns itself so that afterward you can use the other functions .</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="setdefaultevents" class="tsd-anchor"></a>
-					<h3>set<wbr>Default<wbr>Events</h3>
+					<a name="usedefaultevents" class="tsd-anchor"></a>
+					<h3>use<wbr>Default<wbr>Events</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Default<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Default<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L166">source/src/CommandHandler.ts:166</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L210">source/src/CommandHandler.ts:210</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -746,7 +894,9 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">typeof </span><a href="commandhandler.html" class="tsd-signature-type" data-tsd-kind="Namespace">CommandHandler</a></h4>
-							<p>It returns itself so that afterward you can use the other functions.</p>
+							<ul>
+								<li>It returns itself so that afterward you can use the other functions.</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -826,6 +976,12 @@
 						<a href="commandhandler.html#emit" class="tsd-kind-icon">emit</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="commandhandler.html#findcommand" class="tsd-kind-icon">find<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="commandhandler.html#getcommandaliasesandnames" class="tsd-kind-icon">get<wbr>Command<wbr>Aliases<wbr>And<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="commandhandler.html#getprefixfrommessage" class="tsd-kind-icon">get<wbr>Prefix<wbr>From<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
@@ -844,10 +1000,16 @@
 						<a href="commandhandler.html#on" class="tsd-kind-icon">on</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
-						<a href="commandhandler.html#setdefaultcommands" class="tsd-kind-icon">set<wbr>Default<wbr>Commands</a>
+						<a href="commandhandler.html#unloadcommand" class="tsd-kind-icon">unload<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
-						<a href="commandhandler.html#setdefaultevents" class="tsd-kind-icon">set<wbr>Default<wbr>Events</a>
+						<a href="commandhandler.html#unloadevent" class="tsd-kind-icon">unload<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="commandhandler.html#usedefaultcommands" class="tsd-kind-icon">use<wbr>Default<wbr>Commands</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="commandhandler.html#usedefaultevents" class="tsd-kind-icon">use<wbr>Default<wbr>Events</a>
 					</li>
 				</ul>
 			</nav>
@@ -867,6 +1029,14 @@
 				class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span
+				class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span
+				class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span
+				class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span
 				class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span
@@ -875,6 +1045,10 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span
 				class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span
+				class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 		</div>
 	</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cooldown
+	<title>SubCommandOptions
 	| Advanced Command-Handler - v3.0.0-beta.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,10 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.0</a>
 				</li>
 				<li>
-					<a href="cooldown.html">Cooldown</a>
+					<a href="subcommandoptions.html">SubCommandOptions</a>
 				</li>
 			</ul>
-			<h1>Interface Cooldown</h1>
+			<h1>Interface SubCommandOptions</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The cooldown object.</p>
+						<p>The options for a SubCommand.</p>
 					</div>
 				</div>
 			</section>
@@ -78,12 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="commandhandler.commandcooldown.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandCooldown</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">Cooldown</span>
-							</li>
-						</ul>
+						<span class="target">SubCommandOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -94,12 +89,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="cooldown.html#cooldown-1"
-								class="tsd-kind-icon">cooldown</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="cooldown.html#executedat"
-								class="tsd-kind-icon">executed<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="cooldown.html#waitmore"
-								class="tsd-kind-icon">wait<wbr>More</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="subcommandoptions.html#aliases"
+								class="tsd-kind-icon">aliases</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="subcommandoptions.html#channels"
+								class="tsd-kind-icon">channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="subcommandoptions.html#description"
+								class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="subcommandoptions.html#tags"
+								class="tsd-kind-icon">tags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="subcommandoptions.html#usage"
+								class="tsd-kind-icon">usage</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,50 +106,83 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="cooldown-1" class="tsd-anchor"></a>
-					<h3>cooldown</h3>
-					<div class="tsd-signature tsd-kind-icon">cooldown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="aliases" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> aliases</h3>
+					<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandhandler.commandcooldown.html">CommandCooldown</a>.<a href="commandhandler.commandcooldown.html#cooldown">cooldown</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L63">source/src/CommandHandler.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/SubCommand.ts#L15">source/src/classes/commands/SubCommand.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The actual cooldown of the Command.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="executedat" class="tsd-anchor"></a>
-					<h3>executed<wbr>At</h3>
-					<div class="tsd-signature tsd-kind-icon">executed<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="commandhandler.commandcooldown.html">CommandCooldown</a>.<a href="commandhandler.commandcooldown.html#executedat">executedAt</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L59">source/src/CommandHandler.ts:59</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The date the cooldown has started.</p>
+							<p>The aliases of the SubCommand.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="waitmore" class="tsd-anchor"></a>
-					<h3>wait<wbr>More</h3>
-					<div class="tsd-signature tsd-kind-icon">wait<wbr>More<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="channels" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> channels</h3>
+					<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L56">source/src/classes/commands/Command.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/SubCommand.ts#L19">source/src/classes/commands/SubCommand.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The time to wait, in seconds &amp; milliseconds.</p>
+							<p>The channels where the SubCommand can be executed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/SubCommand.ts#L25">source/src/classes/commands/SubCommand.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The description of the SubCommand.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>If a SubCommand has no description, it will not be shown in the default Help Command.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tags" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tags</h3>
+					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><a href="../enums/tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;guildOnly&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;ownerOnly&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nsfw&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;guildOwnerOnly&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dmOnly&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/SubCommand.ts#L29">source/src/classes/commands/SubCommand.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The tags of the SubCommand.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="usage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> usage</h3>
+					<div class="tsd-signature tsd-kind-icon">usage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/SubCommand.ts#L33">source/src/classes/commands/SubCommand.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Examples of usages for the SubCommand.</p>
 						</div>
 					</div>
 				</section>
@@ -169,16 +201,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="cooldown.html" class="tsd-kind-icon">Cooldown</a>
+						<a href="subcommandoptions.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="cooldown.html#cooldown-1" class="tsd-kind-icon">cooldown</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="cooldown.html#executedat" class="tsd-kind-icon">executed<wbr>At</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="subcommandoptions.html#aliases" class="tsd-kind-icon">aliases</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="cooldown.html#waitmore" class="tsd-kind-icon">wait<wbr>More</a>
+								<a href="subcommandoptions.html#channels" class="tsd-kind-icon">channels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="subcommandoptions.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="subcommandoptions.html#tags" class="tsd-kind-icon">tags</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="subcommandoptions.html#usage" class="tsd-kind-icon">usage</a>
 							</li>
 						</ul>
 					</li>
