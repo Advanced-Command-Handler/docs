@@ -8,6 +8,12 @@
 	"name": "Advanced Command-Handler",
 	"out": "docs",
 	"readme": "https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/README.md",
+	"sort": [
+		"static-first",
+		"visibility",
+		"alphabetical",
+		"enum-value-descending"
+	],
 	"theme": "./node_modules/typedoc-darker-theme/bin/default",
 	"tsconfig": "source/src/tsconfig.json"
 }
