@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CommandHandler
-	| Advanced Command-Handler - v3.0.0-beta.3</title>
-	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.3">
+	| Advanced Command-Handler - v3.0.0-beta.4</title>
+	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -25,7 +25,7 @@
 					<li class="state loading">Preparing search index...</li>
 					<li class="state failure">The search index is not available</li>
 				</ul>
-				<a href="../index.html" class="title">Advanced Command-Handler - v3.0.0-beta.3</a>
+				<a href="../index.html" class="title">Advanced Command-Handler - v3.0.0-beta.4</a>
 			</div>
 			<div class="table-cell" id="tsd-widgets">
 				<div id="tsd-filter">
@@ -54,7 +54,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.3</a>
+					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.4</a>
 				</li>
 				<li>
 					<a href="CommandHandler.html">CommandHandler</a>
@@ -393,7 +393,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
 					<a name="version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L121">source/src/CommandHandler.ts:121</a></li>
@@ -418,13 +418,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L248">source/src/CommandHandler.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L251">source/src/CommandHandler.ts:251</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Creates a new CommandHandler, wrap up the last one.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://ayfri.gitbook.io/advanced-command-handler/concepts/command-handler#creating-your-commandhandler" class="external">https://ayfri.gitbook.io/advanced-command-handler/concepts/command-handler#creating-your-commandhandler</a></p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -548,13 +553,13 @@
 					<a name="getPrefixFromMessage" class="tsd-anchor"></a>
 					<h3>get<wbr>Prefix<wbr>From<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Prefix<wbr>From<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Prefix<wbr>From<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L311">source/src/CommandHandler.ts:311</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L315">source/src/CommandHandler.ts:315</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -571,7 +576,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 							<ul>
 								<li>The prefix found or null if not.</li>
 							</ul>
@@ -588,13 +593,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L272">source/src/CommandHandler.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L276">source/src/CommandHandler.ts:276</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Launches the CommandHandler, log in the client and load commands/events.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://ayfri.gitbook.io/advanced-command-handler/concepts/command-handler#launching-the-commandhandler" class="external">https://ayfri.gitbook.io/advanced-command-handler/concepts/command-handler#launching-the-commandhandler</a></p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -622,7 +632,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L321">source/src/CommandHandler.ts:321</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L325">source/src/CommandHandler.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -659,7 +669,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L354">source/src/CommandHandler.ts:354</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L358">source/src/CommandHandler.ts:358</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -695,7 +705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L380">source/src/CommandHandler.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L384">source/src/CommandHandler.ts:384</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -732,7 +742,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L396">source/src/CommandHandler.ts:396</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L400">source/src/CommandHandler.ts:400</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -827,7 +837,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L424">source/src/CommandHandler.ts:424</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L428">source/src/CommandHandler.ts:428</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,7 +868,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L414">source/src/CommandHandler.ts:414</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L418">source/src/CommandHandler.ts:418</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -889,7 +899,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L230">source/src/CommandHandler.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L232">source/src/CommandHandler.ts:232</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -899,6 +909,9 @@
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
 									<dd><p>Must use after <a href="CommandHandler.html#create-1">CommandHandler.create</a>.</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p><a href="https://ayfri.gitbook.io/advanced-command-handler/defaults" class="external">https://ayfri.gitbook.io/advanced-command-handler/defaults</a></p>
 									</dd>
 								</dl>
 							</div>
@@ -919,7 +932,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L211">source/src/CommandHandler.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L212">source/src/CommandHandler.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -929,6 +942,9 @@
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
 									<dd><p>Must use after <a href="CommandHandler.html#create-1">CommandHandler.create</a>.</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p><a href="https://ayfri.gitbook.io/advanced-command-handler/defaults" class="external">https://ayfri.gitbook.io/advanced-command-handler/defaults</a></p>
 									</dd>
 								</dl>
 							</div>
