@@ -508,13 +508,13 @@
 					<a name="argError" class="tsd-anchor"></a>
 					<h3>arg<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">arg<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, command<span class="tsd-signature-symbol">: </span><a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">arg<wbr>Error<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/argError.ts#L13">source/src/utils/argError.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/argError.ts#L11">source/src/utils/argError.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -525,21 +525,15 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+									<h5>ctx: <a href="classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message where the error is from.</p>
+										<p>The message context where the error come from.</p>
 									</div>
 								</li>
 								<li>
 									<h5>error: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The error.</p>
-									</div>
-								</li>
-								<li>
-									<h5>command: <a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The command to be executed.</p>
 									</div>
 								</li>
 							</ul>
@@ -554,13 +548,13 @@
 					<a name="codeError" class="tsd-anchor"></a>
 					<h3>code<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">code<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, command<span class="tsd-signature-symbol">: </span><a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">code<wbr>Error<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/codeError.ts#L19">source/src/utils/codeError.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/codeError.ts#L15">source/src/utils/codeError.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,31 +563,22 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
-									<dd><p>If the message author is an owner, it sends the error stack.</p>
-									</dd>
-									<dt>remarks</dt>
-									<dd><p>Do not use for sending string as errors.</p>
+									<dd><p>If the message author is an owner, it sends the error stack. <br>Do not use for sending string as errors.</p>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+									<h5>ctx: <a href="classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message where the error is from.</p>
+										<p>The command context where the error come from.</p>
 									</div>
 								</li>
 								<li>
 									<h5>error: <span class="tsd-signature-type">Error</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The native error.</p>
-									</div>
-								</li>
-								<li>
-									<h5>command: <a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The command to be executed.</p>
 									</div>
 								</li>
 							</ul>
@@ -1015,7 +1000,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L32">source/src/utils/permissionUtils.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L31">source/src/utils/permissionUtils.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1043,13 +1028,13 @@
 					<a name="permissionsError" class="tsd-anchor"></a>
 					<h3>permissions<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">permissions<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span>, missingPermissions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PermissionString</span><span class="tsd-signature-symbol">[]</span>, command<span class="tsd-signature-symbol">: </span><a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a>, fromClient<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">permissions<wbr>Error<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a>, missingPermissions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PermissionString</span><span class="tsd-signature-symbol">[]</span>, fromClient<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L14">source/src/utils/permissionUtils.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L13">source/src/utils/permissionUtils.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1060,21 +1045,15 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+									<h5>ctx: <a href="classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message where the error is from.</p>
+										<p>The command context where the permission where missing.</p>
 									</div>
 								</li>
 								<li>
 									<h5>missingPermissions: <span class="tsd-signature-type">PermissionString</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The error.</p>
-									</div>
-								</li>
-								<li>
-									<h5>command: <a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The command to be executed.</p>
 									</div>
 								</li>
 								<li>
@@ -1144,7 +1123,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/JSONUtils.ts#L40">source/src/utils/JSONUtils.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/JSONUtils.ts#L41">source/src/utils/JSONUtils.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1177,7 +1156,7 @@
 					<a name="saveJSON" class="tsd-anchor"></a>
 					<h3>saveJSON</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">saveJSON<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">saveJSON<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><a href="modules.html#JSONLike" class="tsd-signature-type" data-tsd-kind="Type alias">JSONLike</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1200,7 +1179,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>content: <span class="tsd-signature-type">any</span></h5>
+									<h5>content: <a href="modules.html#JSONLike" class="tsd-signature-type" data-tsd-kind="Type alias">JSONLike</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The content to save.</p>
 									</div>
