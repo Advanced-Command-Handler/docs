@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CreateCommandHandlerOptions
-	| Advanced Command-Handler - v3.0.0-beta.4</title>
-	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-beta.4">
+	| Advanced Command-Handler - v3.0.0-rc.0</title>
+	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0-rc.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -25,7 +25,7 @@
 					<li class="state loading">Preparing search index...</li>
 					<li class="state failure">The search index is not available</li>
 				</ul>
-				<a href="../index.html" class="title">Advanced Command-Handler - v3.0.0-beta.4</a>
+				<a href="../index.html" class="title">Advanced Command-Handler - v3.0.0-rc.0</a>
 			</div>
 			<div class="table-cell" id="tsd-widgets">
 				<div id="tsd-filter">
@@ -54,7 +54,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">Advanced Command-Handler - v3.0.0-beta.4</a>
+					<a href="../modules.html">Advanced Command-Handler - v3.0.0-rc.0</a>
 				</li>
 				<li>
 					<a href="../modules/CommandHandler.html">CommandHandler</a>
@@ -102,6 +102,8 @@
 								class="tsd-kind-icon">prefixes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#saveLogsInFile"
 								class="tsd-kind-icon">save<wbr>Logs<wbr>InFile</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#useMentionAsPrefix"
+								class="tsd-kind-icon">use<wbr>Mention<wbr>AsPrefix</a></li>
 							</ul>
 						</section>
 					</div>
@@ -130,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">events<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L31">source/src/CommandHandler.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L32">source/src/CommandHandler.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -145,7 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">owners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L35">source/src/CommandHandler.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L37">source/src/CommandHandler.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,19 +162,13 @@
 					<div class="tsd-signature tsd-kind-icon">prefixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L43">source/src/CommandHandler.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L42">source/src/CommandHandler.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The prefixes for the CommandHandler.</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>remarks</dt>
-							<dd><p>There are two default prefixes that are <code>&lt;@!botID&gt;</code> &amp; <code>&lt;@botID&gt;</code>, they&#39;re the text versions of mentions in Discord.
-								There are two ones because the <code>!</code> is only here in private messages to indicate that that&#39;s a user mention and not a member mention.</p>
-							</dd>
-						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -181,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">save<wbr>Logs<wbr>InFile<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L50">source/src/CommandHandler.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L49">source/src/CommandHandler.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,6 +187,26 @@
 						<dl class="tsd-comment-tags">
 							<dt>remarks</dt>
 							<dd><p>If one of the files is not found, it will create it.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="useMentionAsPrefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Mention<wbr>AsPrefix</h3>
+					<div class="tsd-signature tsd-kind-icon">use<wbr>Mention<wbr>AsPrefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L56">source/src/CommandHandler.ts:56</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Add mention of the bot as prefixes.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>defaultvalue</dt>
+							<dd><p>true</p>
 							</dd>
 						</dl>
 					</div>
@@ -238,6 +254,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="CommandHandler.CreateCommandHandlerOptions.html#saveLogsInFile" class="tsd-kind-icon">save<wbr>Logs<wbr>InFile</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CommandHandler.CreateCommandHandlerOptions.html#useMentionAsPrefix" class="tsd-kind-icon">use<wbr>Mention<wbr>AsPrefix</a>
 							</li>
 						</ul>
 					</li>
