@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cooldown
+	<title>ImageLocalOptions
 	| Advanced Command-Handler - v3.0.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,10 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0</a>
 				</li>
 				<li>
-					<a href="Cooldown.html">Cooldown</a>
+					<a href="ImageLocalOptions.html">ImageLocalOptions</a>
 				</li>
 			</ul>
-			<h1>Interface Cooldown</h1>
+			<h1>Interface ImageLocalOptions</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The cooldown object.</p>
+						<p>The options for setting a local image in a message.</p>
 					</div>
 				</div>
 			</section>
@@ -78,12 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="CommandHandler.CommandCooldown.html" class="tsd-signature-type" data-tsd-kind="Interface">CommandCooldown</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">Cooldown</span>
-							</li>
-						</ul>
+						<span class="target">ImageLocalOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -94,12 +89,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="Cooldown.html#cooldown"
-								class="tsd-kind-icon">cooldown</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="Cooldown.html#executedAt"
-								class="tsd-kind-icon">executed<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Cooldown.html#waitMore"
-								class="tsd-kind-icon">wait<wbr>More</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImageLocalOptions.html#channel"
+								class="tsd-kind-icon">channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImageLocalOptions.html#content"
+								class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImageLocalOptions.html#path"
+								class="tsd-kind-icon">path</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,50 +102,48 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="cooldown" class="tsd-anchor"></a>
-					<h3>cooldown</h3>
-					<div class="tsd-signature tsd-kind-icon">cooldown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="channel" class="tsd-anchor"></a>
+					<h3>channel</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TextBasedChannels</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="CommandHandler.CommandCooldown.html">CommandCooldown</a>.<a href="CommandHandler.CommandCooldown.html#cooldown">cooldown</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L62">source/src/CommandHandler.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/ImageCommand.ts#L52">source/src/classes/commands/ImageCommand.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The actual cooldown of the Command.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="executedAt" class="tsd-anchor"></a>
-					<h3>executed<wbr>At</h3>
-					<div class="tsd-signature tsd-kind-icon">executed<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="CommandHandler.CommandCooldown.html">CommandCooldown</a>.<a href="CommandHandler.CommandCooldown.html#executedAt">executedAt</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L58">source/src/CommandHandler.ts:58</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The date the cooldown has started.</p>
+							<p>Channel where to send the image.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="waitMore" class="tsd-anchor"></a>
-					<h3>wait<wbr>More</h3>
-					<div class="tsd-signature tsd-kind-icon">wait<wbr>More<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L56">source/src/classes/commands/Command.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/ImageCommand.ts#L57">source/src/classes/commands/ImageCommand.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The time to wait, in seconds &amp; milliseconds.</p>
+							<p>Content of the message.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="path" class="tsd-anchor"></a>
+					<h3>path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/ImageCommand.ts#L62">source/src/classes/commands/ImageCommand.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Local path of the image.</p>
 						</div>
 					</div>
 				</section>
@@ -169,16 +162,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="Cooldown.html" class="tsd-kind-icon">Cooldown</a>
+						<a href="ImageLocalOptions.html" class="tsd-kind-icon">Image<wbr>Local<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="Cooldown.html#cooldown" class="tsd-kind-icon">cooldown</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="Cooldown.html#executedAt" class="tsd-kind-icon">executed<wbr>At</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImageLocalOptions.html#channel" class="tsd-kind-icon">channel</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="Cooldown.html#waitMore" class="tsd-kind-icon">wait<wbr>More</a>
+								<a href="ImageLocalOptions.html#content" class="tsd-kind-icon">content</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImageLocalOptions.html#path" class="tsd-kind-icon">path</a>
 							</li>
 						</ul>
 					</li>

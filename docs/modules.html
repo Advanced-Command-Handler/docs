@@ -96,6 +96,8 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-is-external"><a href="modules.html#AnyObject"
+								class="tsd-kind-icon">Any<wbr>Object</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#ColorResolvable"
 								class="tsd-kind-icon">Color<wbr>Resolvable</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#Constructor"
@@ -110,6 +112,10 @@
 								class="tsd-kind-icon">Maybe<wbr>Event</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#RunSubCommandFunction"
 								class="tsd-kind-icon">Run<wbr>Sub<wbr>Command<wbr>Function</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="modules.html#Template"
+								class="tsd-kind-icon">Template</a></li>
+								<li class="tsd-kind-type-alias tsd-is-external"><a href="modules.html#Templates"
+								class="tsd-kind-icon">Templates</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -123,10 +129,14 @@
 								class="tsd-kind-icon">Cooldown</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/DeleteMessageOptions.html"
 								class="tsd-kind-icon">Delete<wbr>Message<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ImageEmbedContextOptions.html"
+								class="tsd-kind-icon">Image<wbr>Embed<wbr>Context<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ImageEmbedOptions.html"
 								class="tsd-kind-icon">Image<wbr>Embed<wbr>Options</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/ImageLocal.html"
-								class="tsd-kind-icon">Image<wbr>Local</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ImageLocalContextOptions.html"
+								class="tsd-kind-icon">Image<wbr>Local<wbr>Context<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ImageLocalOptions.html"
+								class="tsd-kind-icon">Image<wbr>Local<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/MissingPermissions.html"
 								class="tsd-kind-icon">Missing<wbr>Permissions</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/SubCommandContextBuilder.html"
@@ -162,8 +172,6 @@
 								class="tsd-kind-icon">Log<wbr>Type</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#colors"
 								class="tsd-kind-icon">colors</a></li>
-								<li class="tsd-kind-variable"><a href="modules.html#dayjs"
-								class="tsd-kind-icon">dayjs</a></li>
 								<li class="tsd-kind-variable tsd-is-external"><a href="modules.html#limits"
 								class="tsd-kind-icon">limits</a></li>
 								<li class="tsd-kind-variable tsd-is-external"><a href="modules.html#templates"
@@ -202,6 +210,16 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-external">
+					<a name="AnyObject" class="tsd-anchor"></a>
+					<h3>Any<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">Any<wbr>Object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in source/node_modules/discord.js-better-embed/dist/types.d.ts:2</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="ColorResolvable" class="tsd-anchor"></a>
 					<h3>Color<wbr>Resolvable</h3>
@@ -252,20 +270,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="JSONLike" class="tsd-anchor"></a>
 					<h3>JSONLike</h3>
-					<div class="tsd-signature tsd-kind-icon">JSONLike<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<div class="tsd-signature tsd-kind-icon">JSONLike<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#JSONLike" class="tsd-signature-type" data-tsd-kind="Type alias">JSONLike</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/JSONUtils.ts#L4">source/src/utils/JSONUtils.ts:4</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>k: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#JSONLike" class="tsd-signature-type" data-tsd-kind="Type alias">JSONLike</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#JSONLike" class="tsd-signature-type" data-tsd-kind="Type alias">JSONLike</a><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="LoggerIgnore" class="tsd-anchor"></a>
@@ -327,6 +337,32 @@
 							</li>
 						</ul>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+					<a name="Template" class="tsd-anchor"></a>
+					<h3>Template</h3>
+					<div class="tsd-signature tsd-kind-icon">Template&lt;V&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MessageEmbedOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-symbol">{ </span>values<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in source/node_modules/discord.js-better-embed/dist/types.d.ts:3</li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#AnyObject" class="tsd-signature-type" data-tsd-kind="Type alias">AnyObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span> = <a href="modules.html#AnyObject" class="tsd-signature-type" data-tsd-kind="Type alias">AnyObject</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-external">
+					<a name="Templates" class="tsd-anchor"></a>
+					<h3>Templates</h3>
+					<div class="tsd-signature tsd-kind-icon">Templates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="modules.html#templates" class="tsd-signature-type" data-tsd-kind="Variable">templates</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in source/node_modules/discord.js-better-embed/dist/BetterEmbed.d.ts:19</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -430,23 +466,13 @@
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="dayjs" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> dayjs</h3>
-					<div class="tsd-signature tsd-kind-icon">dayjs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__module</span><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L17">source/src/CommandHandler.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-external">
 					<a name="limits" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> limits</h3>
 					<div class="tsd-signature tsd-kind-icon">limits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>author<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>fields<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>footer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in source/node_modules/discord.js-better-embed/dist/BetterEmbed.d.ts:12</li>
+							<li>Defined in source/node_modules/discord.js-better-embed/dist/BetterEmbed.d.ts:4</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -494,10 +520,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-external">
 					<a name="templates" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> templates</h3>
-					<div class="tsd-signature tsd-kind-icon">templates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Templates</span></div>
+					<div class="tsd-signature tsd-kind-icon">templates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TemplatesValues</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in source/node_modules/discord.js-better-embed/dist/BetterEmbed.d.ts:11</li>
+							<li>Defined in source/node_modules/discord.js-better-embed/dist/BetterEmbed.d.ts:3</li>
 						</ul>
 					</aside>
 				</section>
@@ -554,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/codeError.ts#L15">source/src/utils/codeError.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/codeError.ts#L13">source/src/utils/codeError.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -688,7 +714,7 @@
 					<a name="getThing" class="tsd-anchor"></a>
 					<h3>get<wbr>Thing</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Thing<span class="tsd-signature-symbol">(</span>dataType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DataTypeResolver</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/DataType.html#CHANNEL" class="tsd-signature-type" data-tsd-kind="Enumeration member">CHANNEL</a><span class="tsd-signature-symbol">&gt;</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildChannel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Thing<span class="tsd-signature-symbol">(</span>dataType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DataTypeResolver</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/DataType.html#CHANNEL" class="tsd-signature-type" data-tsd-kind="Enumeration member">CHANNEL</a><span class="tsd-signature-symbol">&gt;</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Channel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Thing<span class="tsd-signature-symbol">(</span>dataType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DataTypeResolver</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/DataType.html#COMMAND" class="tsd-signature-type" data-tsd-kind="Enumeration member">COMMAND</a><span class="tsd-signature-symbol">&gt;</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Thing<span class="tsd-signature-symbol">(</span>dataType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DataTypeResolver</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/DataType.html#EMOTE" class="tsd-signature-type" data-tsd-kind="Enumeration member">EMOTE</a><span class="tsd-signature-symbol">&gt;</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Emoji</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Thing<span class="tsd-signature-symbol">(</span>dataType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DataTypeResolver</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/DataType.html#GUILD" class="tsd-signature-type" data-tsd-kind="Enumeration member">GUILD</a><span class="tsd-signature-symbol">&gt;</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Guild</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -701,12 +727,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L26">source/src/utils/getThing.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L35">source/src/utils/getThing.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a GuildChannel <a href="https://discord.js/#/docs/main/stable/class/Channel" class="external">https://discord.js/#/docs/main/stable/class/Channel</a> from the text, or the message content and returns null if nothing found.
+									<p>Finds a <a href="https://discord.js/#/docs/main/stable/class/Channel" class="external">Channel</a> from the text, or the message content and returns null if nothing found.
 									It can find it from ID/name/mention.</p>
 								</div>
 							</div>
@@ -725,7 +751,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GuildChannel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Channel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<ul>
 								<li>The Channel or null if not found.</li>
 							</ul>
@@ -733,12 +759,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L35">source/src/utils/getThing.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L44">source/src/utils/getThing.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a Command <a href="classes/Command.html">Command</a> from the text, or the message content and returns null if nothing found.
+									<p>Finds a <a href="classes/Command.html">Command</a> from the text, or the message content and returns null if nothing found.
 									It can find it from the name/alias.</p>
 								</div>
 							</div>
@@ -765,12 +791,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L44">source/src/utils/getThing.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L53">source/src/utils/getThing.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds an Emoji <a href="https://discord.js.org/#/docs/main/stable/class/Emoji" class="external">https://discord.js.org/#/docs/main/stable/class/Emoji</a> from the text, or the message content and returns null if nothing found.
+									<p>Finds an <a href="https://discord.js.org/#/docs/main/stable/class/Emoji" class="external">Emoji</a> from the text, or the message content and returns null if nothing found.
 									It can find it from the name/emoji itself/ID.</p>
 								</div>
 							</div>
@@ -797,12 +823,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L53">source/src/utils/getThing.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L62">source/src/utils/getThing.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a Guild <a href="https://discord.js.org/#/docs/main/stable/class/Guild" class="external">https://discord.js.org/#/docs/main/stable/class/Guild</a> from the text, or the message content and returns null if nothing found.
+									<p>Finds a <a href="https://discord.js.org/#/docs/main/stable/class/Guild" class="external">Guild</a> from the text, or the message content and returns null if nothing found.
 									It can find it from the name/ID.</p>
 								</div>
 							</div>
@@ -829,12 +855,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L62">source/src/utils/getThing.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L71">source/src/utils/getThing.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a GuildMember <a href="https://discord.js.org/#/docs/main/stable/class/GuildMember" class="external">https://discord.js.org/#/docs/main/stable/class/GuildMember</a> from the text, or the message content and returns null if nothing found.
+									<p>Finds a <a href="https://discord.js.org/#/docs/main/stable/class/GuildMember" class="external">GuildMember</a> from the text, or the message content and returns null if nothing found.
 									It can find it from the username/ID/mention/nickname.</p>
 								</div>
 							</div>
@@ -861,12 +887,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L71">source/src/utils/getThing.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L80">source/src/utils/getThing.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a Message <a href="https://discord.js.org/#/docs/main/stable/class/Message" class="external">https://discord.js.org/#/docs/main/stable/class/Message</a> from the text, or the message content and returns null if nothing found.
+									<p>Finds a <a href="https://discord.js.org/#/docs/main/stable/class/Message" class="external">Message</a> from the text, or the message content and returns null if nothing found.
 									It can find it from the name/ID/link.</p>
 								</div>
 							</div>
@@ -893,13 +919,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L80">source/src/utils/getThing.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L89">source/src/utils/getThing.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a Role <a href="https://discord.js.org/#/docs/main/stable/class/Role" class="external">https://discord.js.org/#/docs/main/stable/class/Role</a> from the text, or the message content and returns null if nothing found.
-									It can find it from the name/ID/mention.</p>
+									<p>Finds a <a href="https://discord.js.org/#/docs/main/stable/class/Role" class="external">Role</a> from the text, or the message content and returns null if nothing found.
+									It can find it from the name/ID/mention, if a message is provided, it will fetch the last 100 messages and search in it.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -925,12 +951,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L89">source/src/utils/getThing.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/getThing.ts#L98">source/src/utils/getThing.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds a User <a href="https://discord.js.org/#/docs/main/stable/class/User" class="external">https://discord.js.org/#/docs/main/stable/class/User</a> from the text, or the message content and returns null if nothing found.<br>
+									<p>Finds a <a href="https://discord.js.org/#/docs/main/stable/class/User" class="external">User</a> from the text, or the message content and returns null if nothing found.<br>
 									It can find it from the username/ID.</p>
 								</div>
 							</div>
@@ -1000,7 +1026,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L31">source/src/utils/permissionUtils.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L32">source/src/utils/permissionUtils.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1013,7 +1039,7 @@
 								<li>
 									<h5>permission: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The permission to debug.</p>
+										<p>The permission to test.</p>
 									</div>
 								</li>
 							</ul>
@@ -1034,7 +1060,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L13">source/src/utils/permissionUtils.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/utils/permissionUtils.ts#L14">source/src/utils/permissionUtils.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1167,7 +1193,7 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Saves a JSON into a JSON file.</p>
+									<p>Saves a JSON-Like object into a JSON file.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1209,6 +1235,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
 						<a href="classes/AdvancedClient.html" class="tsd-kind-icon">Advanced<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="modules.html#AnyObject" class="tsd-kind-icon">Any<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-external">
 						<a href="classes/BetterEmbed.html" class="tsd-kind-icon">Better<wbr>Embed</a>
@@ -1259,10 +1288,16 @@
 						<a href="classes/ImageCommand.html" class="tsd-kind-icon">Image<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/ImageEmbedContextOptions.html" class="tsd-kind-icon">Image<wbr>Embed<wbr>Context<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/ImageEmbedOptions.html" class="tsd-kind-icon">Image<wbr>Embed<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ImageLocal.html" class="tsd-kind-icon">Image<wbr>Local</a>
+						<a href="interfaces/ImageLocalContextOptions.html" class="tsd-kind-icon">Image<wbr>Local<wbr>Context<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ImageLocalOptions.html" class="tsd-kind-icon">Image<wbr>Local<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#JSONLike" class="tsd-kind-icon">JSONLike</a>
@@ -1309,6 +1344,12 @@
 					<li class=" tsd-kind-enum">
 						<a href="enums/Tag.html" class="tsd-kind-icon">Tag</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="modules.html#Template" class="tsd-kind-icon">Template</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="modules.html#Templates" class="tsd-kind-icon">Templates</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#argError" class="tsd-kind-icon">arg<wbr>Error</a>
 					</li>
@@ -1320,9 +1361,6 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#cutIfTooLong" class="tsd-kind-icon">cut<wbr>IfToo<wbr>Long</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#dayjs" class="tsd-kind-icon">dayjs</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#getKeyByValue" class="tsd-kind-icon">get<wbr>Key<wbr>ByValue</a>

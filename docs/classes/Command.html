@@ -222,7 +222,7 @@
 					<a name="deleteMessage" class="tsd-anchor"></a>
 					<h3>delete<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Message<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/DeleteMessageOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteMessageOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Message<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/DeleteMessageOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteMessageOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Timeout</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -245,9 +245,9 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Timeout</span></h4>
 							<ul>
-								<li>The deleted message if deleted.</li>
+								<li>If not deletable nothing, else the deleted message or the Node.js Timer if a timeout is set.</li>
 							</ul>
 						</li>
 					</ul>
@@ -262,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L353">source/src/classes/commands/Command.ts:353</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L352">source/src/classes/commands/Command.ts:352</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -296,7 +296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L320">source/src/classes/commands/Command.ts:320</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L319">source/src/classes/commands/Command.ts:319</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -309,7 +309,7 @@
 								<li>
 									<h5>from: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GuildMember</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Where to get the cooldown from, see types.</p>
+										<p>Where to get the cooldown from, can be a user/guild/message, see types.</p>
 									</div>
 								</li>
 							</ul>
@@ -361,26 +361,26 @@
 					<a name="getMissingPermissions" class="tsd-anchor"></a>
 					<h3>get<wbr>Missing<wbr>Permissions</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Missing<wbr>Permissions<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/MissingPermissions.html" class="tsd-signature-type" data-tsd-kind="Interface">MissingPermissions</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Missing<wbr>Permissions<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/MissingPermissions.html" class="tsd-signature-type" data-tsd-kind="Interface">MissingPermissions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L219">source/src/classes/commands/Command.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L221">source/src/classes/commands/Command.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the missing permissions from the client &amp; user for a message.</p>
+									<p>Returns the missing permissions from the client &amp; user for a context.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+									<h5>ctx: <a href="CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message to check permissions for.</p>
+										<p>The context to check permissions for.</p>
 									</div>
 								</li>
 							</ul>
@@ -395,7 +395,7 @@
 					<a name="getMissingTags" class="tsd-anchor"></a>
 					<h3>get<wbr>Missing<wbr>Tags</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Missing<wbr>Tags<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Missing<wbr>Tags<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -406,16 +406,16 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gives the <a href="Command.html#tags">tags</a> of this command which are not validated by the message.<br>
+									<p>Gives the <a href="Command.html#tags">tags</a> of this command which are not validated by the context.<br>
 									i.e. If a command is executed on a guild and the command has the <code>dmOnly</code> Tag, it will be returned.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+									<h5>ctx: <a href="CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message to debug tags from.</p>
+										<p>The context to test tags from.</p>
 									</div>
 								</li>
 							</ul>
@@ -436,7 +436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L309">source/src/classes/commands/Command.ts:309</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L308">source/src/classes/commands/Command.ts:308</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -454,7 +454,7 @@
 								<li>
 									<h5>from: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GuildMember</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>From where to debug if user is in a cooldown, see types.</p>
+										<p>From where to test if user/guild/message is in a cooldown, see types.</p>
 									</div>
 								</li>
 							</ul>
@@ -469,7 +469,7 @@
 					<a name="isInRightChannel" class="tsd-anchor"></a>
 					<h3>is<wbr>InRight<wbr>Channel</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>InRight<wbr>Channel<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TextChannel</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>InRight<wbr>Channel<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -486,9 +486,9 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>from: <span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TextChannel</span></h5>
+									<h5>ctx: <a href="CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message or channel to debug where it comes from.</p>
+										<p>The context to test where it comes from.</p>
 									</div>
 								</li>
 							</ul>
@@ -567,7 +567,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L333">source/src/classes/commands/Command.ts:333</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L332">source/src/classes/commands/Command.ts:332</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -580,7 +580,7 @@
 								<li>
 									<h5>from: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GuildMember</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>What to use to select the user to set the cooldown from.</p>
+										<p>What to use to select the user to set the cooldown from, can be a guild/message/member.</p>
 									</div>
 								</li>
 							</ul>
@@ -598,7 +598,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L382">source/src/classes/commands/Command.ts:382</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L381">source/src/classes/commands/Command.ts:381</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -633,7 +633,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L420">source/src/classes/commands/Command.ts:420</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L419">source/src/classes/commands/Command.ts:419</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -650,7 +650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L421">source/src/classes/commands/Command.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L420">source/src/classes/commands/Command.ts:420</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
