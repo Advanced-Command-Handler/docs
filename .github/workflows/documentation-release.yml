@@ -17,6 +17,7 @@ jobs:
       - run: |
           git fetch --tags
           latesttag=$(git tag --contains | tail -1`)
+          echo ${latesttag}
           git checkout ${latesttag}
 
       - name: Install Node.js
