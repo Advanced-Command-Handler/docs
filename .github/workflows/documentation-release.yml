@@ -15,6 +15,7 @@ jobs:
           repository: Advanced-Command-Handler/Advanced-Command-Handler
           path: 'source'
       - run: |
+          git fetch --tags
           latesttag=$(git describe --tags)
           echo checking out ${latesttag}
           git checkout ${latesttag}
