@@ -30,7 +30,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          ls
+          cd ..
+          ls -AR
           npm i
 
       - name: Install source Dependencies
