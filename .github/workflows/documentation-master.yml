@@ -18,7 +18,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Install Dependencies
         run: |
@@ -36,7 +36,7 @@ jobs:
           npm run lint
 
       - name: Generate Documentation
-        run: npm run generate
+        run: npm run generateMaster
 
       - name: Commit changes
         run: |

@@ -13,7 +13,8 @@
 		"typescript": "^4.3.5"
 	},
 	"scripts": {
-		"generate": "typedoc --sourcefile-url-map mappings.json",
-		"watch": "npm run generate -- --watch"
+		"generateMaster": "typedoc --options typedoc_master.json --sourcefile-url-map mappings.json",
+		"generateRelease": "typedoc --options typedoc_release.json --sourcefile-url-map mappings.json",
+		"watch": "npm run generateMaster -- --watch"
 	}
 }
