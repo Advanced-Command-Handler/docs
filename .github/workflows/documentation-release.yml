@@ -7,6 +7,8 @@ jobs:
     name: Generate Documentation
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Get latest release with tag
         id: latestrelease
         run: |
@@ -30,8 +32,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd ..
-          ls -AR
           npm i
 
       - name: Install source Dependencies
