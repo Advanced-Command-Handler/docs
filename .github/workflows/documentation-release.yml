@@ -16,7 +16,7 @@ jobs:
           path: 'source'
       - run: |
           git fetch --tags
-          latesttag=$(git describe --tags `git rev-list --tags --max-count=1`)
+          latesttag=$(git tag --contains | tail -1`)
           git checkout ${latesttag}
 
       - name: Install Node.js
