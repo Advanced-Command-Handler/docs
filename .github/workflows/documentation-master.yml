@@ -1,4 +1,4 @@
-name: Generate Documentation
+name: Generate Master Documentation
 
 on: [ workflow_dispatch, repository_dispatch ]
 
