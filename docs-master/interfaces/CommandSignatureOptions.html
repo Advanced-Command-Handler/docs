@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CommandErrorBuilder
+	<title>CommandSignatureOptions
 	| Advanced Command-Handler - v3.0.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,28 +57,21 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0</a>
 				</li>
 				<li>
-					<a href="CommandErrorBuilder.html">CommandErrorBuilder</a>
+					<a href="CommandSignatureOptions.html">CommandSignatureOptions</a>
 				</li>
 			</ul>
-			<h1>Interface CommandErrorBuilder</h1>
+			<h1>Interface CommandSignatureOptions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The object to create a new CommandError.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CommandErrorBuilder</span>
+						<span class="target">CommandSignatureOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -89,12 +82,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandErrorBuilder.html#data"
-								class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandErrorBuilder.html#message"
-								class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandErrorBuilder.html#type"
-								class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandSignatureOptions.html#showDefaultValues"
+								class="tsd-kind-icon">show<wbr>Default<wbr>Values</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandSignatureOptions.html#showTypes"
+								class="tsd-kind-icon">show<wbr>Types</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,54 +94,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="showDefaultValues" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>Default<wbr>Values</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Default<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L23">source/src/classes/errors/CommandError.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L107">source/src/classes/commands/Command.ts:107</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The data of the error, can be anything but should be related to the error type.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>see</dt>
-							<dd><p>CommandErrorBuilder#type.</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="showTypes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>Types</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L27">source/src/classes/errors/CommandError.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L108">source/src/classes/commands/Command.ts:108</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The message of the error, to inform what is the problem.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/CommandErrorType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">CommandErrorType</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/errors/CommandError.ts#L31">source/src/classes/errors/CommandError.ts:31</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The type of error.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -167,16 +128,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="CommandErrorBuilder.html" class="tsd-kind-icon">Command<wbr>Error<wbr>Builder</a>
+						<a href="CommandSignatureOptions.html" class="tsd-kind-icon">Command<wbr>Signature<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandErrorBuilder.html#data" class="tsd-kind-icon">data</a>
+								<a href="CommandSignatureOptions.html#showDefaultValues" class="tsd-kind-icon">show<wbr>Default<wbr>Values</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandErrorBuilder.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandErrorBuilder.html#type" class="tsd-kind-icon">type</a>
+								<a href="CommandSignatureOptions.html#showTypes" class="tsd-kind-icon">show<wbr>Types</a>
 							</li>
 						</ul>
 					</li>

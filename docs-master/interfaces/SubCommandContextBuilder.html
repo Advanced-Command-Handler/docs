@@ -94,14 +94,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="SubCommandContextBuilder.html#args"
-								class="tsd-kind-icon">args</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="SubCommandContextBuilder.html#command"
 								class="tsd-kind-icon">command</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="SubCommandContextBuilder.html#handler"
 								class="tsd-kind-icon">handler</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="SubCommandContextBuilder.html#message"
 								class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="SubCommandContextBuilder.html#rawArgs"
+								class="tsd-kind-icon">raw<wbr>Args</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="SubCommandContextBuilder.html#subCommand"
 								class="tsd-kind-icon">sub<wbr>Command</a></li>
 							</ul>
@@ -112,29 +112,13 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="args" class="tsd-anchor"></a>
-					<h3>args</h3>
-					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="CommandContextBuilder.html">CommandContextBuilder</a>.<a href="CommandContextBuilder.html#args">args</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L32">source/src/classes/contexts/CommandContext.ts:32</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The arguments in the message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="command" class="tsd-anchor"></a>
 					<h3>command</h3>
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="../classes/Command.html" class="tsd-signature-type" data-tsd-kind="Class">Command</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="CommandContextBuilder.html">CommandContextBuilder</a>.<a href="CommandContextBuilder.html#command">command</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L36">source/src/classes/contexts/CommandContext.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L33">source/src/classes/contexts/CommandContext.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -150,7 +134,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="CommandContextBuilder.html">CommandContextBuilder</a>.<a href="CommandContextBuilder.html#handler">handler</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L40">source/src/classes/contexts/CommandContext.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L37">source/src/classes/contexts/CommandContext.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,12 +150,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="CommandContextBuilder.html">CommandContextBuilder</a>.<a href="CommandContextBuilder.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L44">source/src/classes/contexts/CommandContext.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L41">source/src/classes/contexts/CommandContext.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The message that executed the command.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="rawArgs" class="tsd-anchor"></a>
+					<h3>raw<wbr>Args</h3>
+					<div class="tsd-signature tsd-kind-icon">raw<wbr>Args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="CommandContextBuilder.html">CommandContextBuilder</a>.<a href="CommandContextBuilder.html#rawArgs">rawArgs</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/CommandContext.ts#L45">source/src/classes/contexts/CommandContext.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The arguments in the message.</p>
 						</div>
 					</div>
 				</section>
@@ -181,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">sub<wbr>Command<span class="tsd-signature-symbol">:</span> <a href="../classes/SubCommand.html" class="tsd-signature-type" data-tsd-kind="Class">SubCommand</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/SubCommandContext.ts#L11">source/src/classes/contexts/SubCommandContext.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/contexts/SubCommandContext.ts#L12">source/src/classes/contexts/SubCommandContext.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -208,9 +208,6 @@
 						<a href="SubCommandContextBuilder.html" class="tsd-kind-icon">Sub<wbr>Command<wbr>Context<wbr>Builder</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="SubCommandContextBuilder.html#args" class="tsd-kind-icon">args</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="SubCommandContextBuilder.html#command" class="tsd-kind-icon">command</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -218,6 +215,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="SubCommandContextBuilder.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="SubCommandContextBuilder.html#rawArgs" class="tsd-kind-icon">raw<wbr>Args</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="SubCommandContextBuilder.html#subCommand" class="tsd-kind-icon">sub<wbr>Command</a>
