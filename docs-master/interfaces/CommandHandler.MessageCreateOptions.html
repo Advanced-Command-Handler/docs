@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CreateCommandHandlerOptions
+	<title>MessageCreateOptions
 	| Advanced Command-Handler - v3.0.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,10 +60,10 @@
 					<a href="../modules/CommandHandler.html">CommandHandler</a>
 				</li>
 				<li>
-					<a href="CommandHandler.CreateCommandHandlerOptions.html">CreateCommandHandlerOptions</a>
+					<a href="CommandHandler.MessageCreateOptions.html">MessageCreateOptions</a>
 				</li>
 			</ul>
-			<h1>Interface CreateCommandHandlerOptions</h1>
+			<h1>Interface MessageCreateOptions</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The options for creating a new CommandHandler instance.</p>
+						<p>The options for the default {@link MessageCreateEvent | messageCreate} event.</p>
 					</div>
 				</div>
 			</section>
@@ -81,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CreateCommandHandlerOptions</span>
+						<span class="target">MessageCreateOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -92,18 +92,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#commandsDir"
-								class="tsd-kind-icon">commands<wbr>Dir</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#eventsDir"
-								class="tsd-kind-icon">events<wbr>Dir</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#owners"
-								class="tsd-kind-icon">owners</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#prefixes"
-								class="tsd-kind-icon">prefixes</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#saveLogsInFile"
-								class="tsd-kind-icon">save<wbr>Logs<wbr>InFile</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.CreateCommandHandlerOptions.html#useMentionAsPrefix"
-								class="tsd-kind-icon">use<wbr>Mention<wbr>AsPrefix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.MessageCreateOptions.html#excludeBots"
+								class="tsd-kind-icon">exclude<wbr>Bots</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.MessageCreateOptions.html#globalTags"
+								class="tsd-kind-icon">global<wbr>Tags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.MessageCreateOptions.html#sendCodeError"
+								class="tsd-kind-icon">send<wbr>Code<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.MessageCreateOptions.html#sendCodeErrorOnlyToOwners"
+								class="tsd-kind-icon">send<wbr>Code<wbr>Error<wbr>Only<wbr>ToOwners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="CommandHandler.MessageCreateOptions.html#sendWhenError"
+								class="tsd-kind-icon">send<wbr>When<wbr>Error</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,103 +110,93 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="commandsDir" class="tsd-anchor"></a>
-					<h3>commands<wbr>Dir</h3>
-					<div class="tsd-signature tsd-kind-icon">commands<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="excludeBots" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude<wbr>Bots</h3>
+					<div class="tsd-signature tsd-kind-icon">exclude<wbr>Bots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L96">source/src/CommandHandler.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L52">source/src/CommandHandler.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The directory of your commands.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="eventsDir" class="tsd-anchor"></a>
-					<h3>events<wbr>Dir</h3>
-					<div class="tsd-signature tsd-kind-icon">events<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L101">source/src/CommandHandler.ts:101</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The directory of your events.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="owners" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> owners</h3>
-					<div class="tsd-signature tsd-kind-icon">owners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L106">source/src/CommandHandler.ts:106</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The owners IDs from discord of the bot.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="prefixes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefixes</h3>
-					<div class="tsd-signature tsd-kind-icon">prefixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L111">source/src/CommandHandler.ts:111</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The prefixes for the CommandHandler.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="saveLogsInFile" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> save<wbr>Logs<wbr>InFile</h3>
-					<div class="tsd-signature tsd-kind-icon">save<wbr>Logs<wbr>InFile<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L118">source/src/CommandHandler.ts:118</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Save all the logs in these files.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>remarks</dt>
-							<dd><p>If one of the files is not found, it will create it.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="useMentionAsPrefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Mention<wbr>AsPrefix</h3>
-					<div class="tsd-signature tsd-kind-icon">use<wbr>Mention<wbr>AsPrefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L125">source/src/CommandHandler.ts:125</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Add mention of the bot as prefixes.</p>
+							<p>Exclude bot or not.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>defaultvalue</dt>
 							<dd><p>true</p>
 							</dd>
 						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="globalTags" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> global<wbr>Tags</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>Tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L56">source/src/CommandHandler.ts:56</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of global tags to apply before the commands is executed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendCodeError" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> send<wbr>Code<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Code<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L62">source/src/CommandHandler.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Send the code error when a command execution is failed and an error is thrown.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>defaultvalue</dt>
+							<dd><p>true</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendCodeErrorOnlyToOwners" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> send<wbr>Code<wbr>Error<wbr>Only<wbr>ToOwners</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Code<wbr>Error<wbr>Only<wbr>ToOwners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L68">source/src/CommandHandler.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Send the code error only to owners when a command execution is failed and an error is thrown.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>defaultvalue</dt>
+							<dd><p>true</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sendWhenError" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> send<wbr>When<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>When<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MessageEmbed</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/CommandHandler.ts#L72">source/src/CommandHandler.ts:72</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A message to send to anyone (or not-owners if <a href="CommandHandler.MessageCreateOptions.html#sendCodeErrorOnlyToOwners">sendCodeErrorOnlyToOwners</a> is set) when a command execution is failed and an error is thrown.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -238,42 +226,39 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
 						<a href="../modules/CommandHandler.html#CooldownUser" class="tsd-kind-icon">Cooldown<wbr>User</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="CommandHandler.CreateCommandHandlerOptions.html" class="tsd-kind-icon">Create<wbr>Command<wbr>Handler<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandHandler.CreateCommandHandlerOptions.html#commandsDir" class="tsd-kind-icon">commands<wbr>Dir</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandHandler.CreateCommandHandlerOptions.html#eventsDir" class="tsd-kind-icon">events<wbr>Dir</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandHandler.CreateCommandHandlerOptions.html#owners" class="tsd-kind-icon">owners</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandHandler.CreateCommandHandlerOptions.html#prefixes" class="tsd-kind-icon">prefixes</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandHandler.CreateCommandHandlerOptions.html#saveLogsInFile" class="tsd-kind-icon">save<wbr>Logs<wbr>InFile</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="CommandHandler.CreateCommandHandlerOptions.html#useMentionAsPrefix" class="tsd-kind-icon">use<wbr>Mention<wbr>AsPrefix</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="CommandHandler.HelpOptions.html" class="tsd-kind-icon">Help<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="CommandHandler.LaunchCommandHandlerOptions.html" class="tsd-kind-icon">Launch<wbr>Command<wbr>Handler<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="CommandHandler.MessageCreateOptions.html" class="tsd-kind-icon">Message<wbr>Create<wbr>Options</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CommandHandler.MessageCreateOptions.html#excludeBots" class="tsd-kind-icon">exclude<wbr>Bots</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CommandHandler.MessageCreateOptions.html#globalTags" class="tsd-kind-icon">global<wbr>Tags</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CommandHandler.MessageCreateOptions.html#sendCodeError" class="tsd-kind-icon">send<wbr>Code<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CommandHandler.MessageCreateOptions.html#sendCodeErrorOnlyToOwners" class="tsd-kind-icon">send<wbr>Code<wbr>Error<wbr>Only<wbr>ToOwners</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="CommandHandler.MessageCreateOptions.html#sendWhenError" class="tsd-kind-icon">send<wbr>When<wbr>Error</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
 						<a href="../modules/CommandHandler.html#client" class="tsd-kind-icon">client</a>
 					</li>

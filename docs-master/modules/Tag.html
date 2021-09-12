@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeleteMessageOptions
+	<title>Tag
 	| Advanced Command-Handler - v3.0.0</title>
 	<meta name="description" content="Documentation for Advanced Command-Handler - v3.0.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,78 +57,71 @@
 					<a href="../modules.html">Advanced Command-Handler - v3.0.0</a>
 				</li>
 				<li>
-					<a href="DeleteMessageOptions.html">DeleteMessageOptions</a>
+					<a href="Tag.html">Tag</a>
 				</li>
 			</ul>
-			<h1>Interface DeleteMessageOptions</h1>
+			<h1>Namespace Tag</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Options for the Command#deleteMessage method.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DeleteMessageOptions</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeleteMessageOptions.html#message"
-								class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DeleteMessageOptions.html#timeout"
-								class="tsd-kind-icon">timeout</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="Tag.html#check"
+								class="tsd-kind-icon">check</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L99">source/src/classes/commands/Command.ts:99</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The message to delete.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="timeout" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> timeout</h3>
-					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L103">source/src/classes/commands/Command.ts:103</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>How long to wait to delete the message in milliseconds.</p>
-						</div>
-					</div>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="check" class="tsd-anchor"></a>
+					<h3>check</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">check<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a>, tags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">typeof </span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Advanced-Command-Handler/Advanced-Command-Handler/tree/master/src/classes/commands/Command.ts#L66">source/src/classes/commands/Command.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if some tags are validated in the command context.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../classes/CommandContext.html" class="tsd-signature-type" data-tsd-kind="Class">CommandContext</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The command context.</p>
+									</div>
+								</li>
+								<li>
+									<h5>tags: <span class="tsd-signature-symbol">(</span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-symbol">typeof </span><a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The tags to test.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/Tag.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Tag</a><span class="tsd-signature-symbol">[]</span></h4>
+							<ul>
+								<li>The tags not validated.</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -138,25 +131,19 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="CommandHandler.html">Command<wbr>Handler</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="Tag.html">Tag</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="DeleteMessageOptions.html" class="tsd-kind-icon">Delete<wbr>Message<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="DeleteMessageOptions.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="DeleteMessageOptions.html#timeout" class="tsd-kind-icon">timeout</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="Tag.html#check" class="tsd-kind-icon">check</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>
