@@ -7,7 +7,7 @@ jobs:
     name: Generate Documentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Get latest release with tag
         id: latestrelease
@@ -19,16 +19,16 @@ jobs:
           echo ${{ steps.latestrelease.outputs.releasetag }}
 
       - name: Download Project in latest tag
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: Advanced-Command-Handler/Advanced-Command-Handler
           path: 'source'
           ref: ${{ steps.latestrelease.outputs.releasetag }}
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 14
 
       - name: Install Dependencies
         run: |

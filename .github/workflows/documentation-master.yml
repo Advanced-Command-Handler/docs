@@ -7,22 +7,22 @@ jobs:
     name: Generate Documentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Download Command Handler
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: Advanced-Command-Handler/Advanced-Command-Handler
           path: 'source'
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install Dependencies
         run: |
-          npm i
+          npm ci
 
       - name: Install source Dependencies
         run: |
