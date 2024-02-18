@@ -4,7 +4,7 @@
 		"typedoc": "^0.21.9",
 		"typedoc-darker-theme": "^1.2.1",
 		"typedoc-plugin-sourcefile-url": "^1.0.6",
-		"typescript": "^4.4.2"
+		"typescript": "^4.4.4"
 	},
 	"description": "The official documentation for Advanced-Command-Handler.",
 	"license": "GNU",
