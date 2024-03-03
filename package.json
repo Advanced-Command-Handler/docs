@@ -1,10 +1,11 @@
 {
 	"author": "Ayfri <pierre.ayfri@gmail.com>",
 	"dependencies": {
-		"typedoc": "^0.21.9",
-		"typedoc-darker-theme": "^1.2.1",
-		"typedoc-plugin-sourcefile-url": "^1.0.6",
-		"typescript": "^4.4.4"
+		"typedoc": "0.25.8",
+		"typedoc-darker-theme": "1.2.1",
+		"typedoc-github-wiki-theme": "1.1.0",
+		"typedoc-plugin-sourcefile-url": "1.0.6",
+		"typescript": "5.3.3"
 	},
 	"description": "The official documentation for Advanced-Command-Handler.",
 	"license": "GNU",
@@ -12,8 +13,8 @@
 	"private": true,
 	"repository": "https://github.com/Advanced-Command-Handler/docs.git",
 	"scripts": {
-		"generateMaster": "typedoc --options typedoc_master.json --sourcefile-url-map mappings.json",
-		"generateRelease": "typedoc --options typedoc_release.json --sourcefile-url-map mappings.json",
+		"generateMaster": "typedoc --options typedoc_master.json",
+		"generateRelease": "typedoc --options typedoc_release.json",
 		"watch": "npm run generateMaster -- --watch"
 	},
 	"version": "1.1.0"
